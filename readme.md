@@ -8,7 +8,7 @@ O problema a ser resolvido diz respeito a como encontrar postos de combustíveis
 
 No momento o Gasola está disponível apenas para o Plano Piloto/DF e no formato Web, e pode ser acessado pelo endereço de Internet: [https://gasola.com.br/](https://gasola.com.br/).
 
-<p align="center"><img src="https://github.com/unb-ppca-csw/gasola/blob/master/images/gasola.gif"></p>
+<div align="center" style="background:#36BB3B"><img src="https://github.com/unb-ppca-csw/gasola/blob/master/images/gasola.gif"></div>
 
 ## Licença
 
