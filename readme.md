@@ -1,6 +1,6 @@
 <p align="center"><img src="https://github.com/unb-ppca-csw/gasola/blob/master/images/gasola-logo-alpha.png"></p>
 
-## Sobre o Gasola
+## Sobre
 
 Gasola é um projeto da disciplina [Construção de Software (CS)](https://medium.com/construcao-de-software) do PPCA/UnB 1.2018. Trata-se de um MVP (experimento) para viabilizar o estudo de diversos conceitos ligados a uma startup.
 
@@ -10,4 +10,7 @@ No momento o Gasola está disponível apenas para o Plano Piloto/DF e no formato
 
 <p align="center"><img src="https://github.com/unb-ppca-csw/gasola/blob/master/images/gasola.gif"></p>
 
+## Licença
 
+Gasola é uma aplicação Web Responsiva utilizando o [Framework7](http://framework7.io/), código-aberto, licenciado sob a [GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.en.html). 
+<img src="https://www.gnu.org/graphics/gplv3-88x31.png" />
