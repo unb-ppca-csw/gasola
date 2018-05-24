@@ -12,5 +12,6 @@ No momento o Gasola está disponível apenas para o Plano Piloto/DF e no formato
 
 ## Licença
 
-Gasola é uma aplicação Web Responsiva utilizando o [Framework7](http://framework7.io/), código-aberto, licenciado sob a [GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.en.html). 
+Gasola é uma aplicação Web responsiva utilizando o [Framework7](http://framework7.io/) e licenciado sob a [GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.en.html). 
+
 <img src="https://www.gnu.org/graphics/gplv3-88x31.png" />
