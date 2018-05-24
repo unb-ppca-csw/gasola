@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags-->
+    <!--<meta charset="utf-8">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!--<meta name="theme-color" content="#2196f3">-->
+    <title>Gasola</title>
+    <link rel="stylesheet" href="css/framework7.min.css">
+    <link rel="stylesheet" href="css/framework7-icons.css">
+    <link rel="stylesheet" href="css/app.css">
+
+</head>
+<body>
+<div id="gig" align="center"><img src="images/gasola-logo.png"/></div>
+
+<!--<div class="popup popup-tablet-fullscreen popup-lang">-->
+    <!--<div class="navbar">-->
+        <!--<div class="navbar-inner">-->
+            <!--<div class="title">Popup</div>-->
+            <!--<div class="right">-->
+                <!--&lt;!&ndash; Link to close popup &ndash;&gt;-->
+                <!--<a class="link popup-close">Close</a>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--ok ok ok-->
+<!--</div>-->
+<!--<p><a href="#" data-popup=".popup-lang" class="popup-open">Idioma</a></p>-->
+
+<!-- APP -->
+<div id="app">
+    <!-- right panel -->
+    <div class="panel panel-right panel-reveal">
+        <div class="view view-config">
+            <div class="page">
+                <div class="navbar" >
+                    <div class="navbar-inner">
+                        <div class="left">{{config.configuration}}</div>
+                        <div class="title"></div>
+                        <div class="right"><button id="btn-apply-config" class="col button button-small button-fill color-blue-dark">{{button.apply}}</button></div>
+                    </div>
+                </div>
+                <div class="block-title">&nbsp;</div>
+                <form id="frm-config" class="form-store-data">
+                    <div class="list no-hairlines">
+
+                        <ul>
+                            <li>
+                                <div class="item-content">
+                                    <p class="segmented segmented-round">
+                                        <button id="bt-show-map" class="button button-round button-outline button-active">{{config.show.map}}</button>
+                                        <button id="bt-show-list" class="button button-round button-outline">{{config.show.list}}</button>
+                                    </p>
+                                    <input type="hidden" id="config_show" name="config_show" value="map">
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul>
+                            <li>
+                                <div class="item-content">
+                                    <p class="item-title">
+                                        <a href="#" id="btn-login" data-login-screen=".login-screen" class="login-screen-open">{{login.label}}</a>
+                                        <i class="f7-icons size-22">person</i> <span id="lb-username"></span> &nbsp;
+                                        <a href="#" data-popup=".popup-updatepwd" class="popup-open">{{updatepwd.password}}</a> |
+                                        <a href="#" id="btn-logout" class="">{{button.logout}}</a>
+                                        <!--<a href="#" data-popup=".view-register" class="popup-open">{{register.label}}</a>-->
+
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!--<ul id="box-register">-->
+                            <!--<li>-->
+                                <!--<div class="item-content">-->
+                                    <!--<p>-->
+                                        <!--&lt;!&ndash;<a href="#" data-login-screen=".login-screen" class="login-screen-open">{{login.label}}</a>&ndash;&gt;-->
+                                        <!--<a href="#" data-popup=".popup-register" class="popup-open">{{register.label}}</a>-->
+
+                                    <!--</p>-->
+                                <!--</div>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+
+                        <ul>
+                            <li>
+                                <a class="item-link smart-select smart-select-init">
+                                    <select name="config_lang">
+                                        <option value="en">{{config.lang.en}}</option>
+                                        <option value="pt-BR" selected>{{config.lang.pt-BR}}</option>
+                                    </select>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title">{{config.lang.label}}</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul>
+                            <li>
+                                <a class="item-link smart-select smart-select-init">
+                                    <select name="config_fuel" multiple>
+                                        <option value="g" selected>{{fuel.g.label}}</option>
+                                        <option value="e">{{fuel.e.label}}</option>
+                                        <option value="d">{{fuel.d.label}}</option>
+                                    </select>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title">{{fuel.label}}</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+
+
+                        <ul>
+                            <li>
+                                <div class="item-content">
+                                    <p class="item-title">
+                                        <i class="f7-icons size-22 float-left" style="margin-right: 10px;">email</i>
+                                        <a href="#" data-popup=".popup-contact" class="popup-open float-left" >{{contact.label}}</a>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div> <!-- end right panel -->
+    <!--<div class="view view-main view-init">-->
+
+
+    <div class="view view-main">
+        <div class="page" data-name="home">
+            <div class="navbar theme-gasola">
+                <div class="navbar-inner">
+                    <div class="left">
+                        <img src="images/gasola-label.png" />
+                    </div>
+                    <div class="title"></div>
+                    <div class="right"><a class="panel-open" href="#" ><i class="f7-icons size-20">gear</i></a></div>
+
+                </div>
+            </div>
+
+           <!-- MAP GAS STATITON -->
+
+            <div id="view-show-map" class="page-content">
+                <div id="view-map" class="block">
+                    <p> </p>
+                        <span id="map-search"></span><input id="pac-input" class="controls" type="text" placeholder="{{button.find}}"></span>
+                        <div id="map"></div>
+                </div>
+            </div>
+
+
+
+
+            <!-- LIST GAS STATION -->
+
+            <div id="view-show-list"  class="page-content">
+
+
+                <form class="searchbar">
+                    <div class="searchbar-inner">
+                        <div class="searchbar-input-wrap">
+                            <input type="search" placeholder="{{button.find}}">
+                            <i class="searchbar-icon"></i>
+                            <span class="input-clear-button"></span>
+                        </div>
+                        <span class="searchbar-disable-button">{{button.cancel}}</span>
+                    </div>
+                </form>
+                <p></p>
+                <!--<div class="block-title">{{list.title}}</div>-->
+                <!--<div class="searchbar-backdrop"></div>-->
+                <div class="block searchbar-not-found">
+                    <div class="block-inner">{{message.nothing.found}}</div>
+                </div>
+                <div class="list media-list searchbar-found">
+                    <ul id="items-show-list">
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div> <!-- END VIEW-MAIN -->
+
+    <!-- PRIVACY -->
+    <div class="popup popup-tablet-fullscreen popup-privacy" style="z-index:99999;">
+        <div class="view">
+            <div class="page">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="title">{{message.privacy}}</div>
+                        <div class="right">
+                            <!--<a class="link popup-close"><i class="f7-icons">close_round</i></a>-->
+                            <a class="link" id="btn-popup-privacy-close"><i class="f7-icons">close_round</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-content login-screen-content" align="center">
+                    <iframe width="99%" style="min-height: 400px" frameborder="0" scrolling="on" src="privacy.html"></iframe>
+                </div>
+            </div>
+        </div>
+    </div> <!-- END PRIVACY -->
+
+    <!-- NOT LOGGED LOGIN/REGISTER -->
+    <div class="popup popup-tablet-fullscreen popup-notlogged">
+        <div class="view">
+            <div class="page">
+                <!--<div class="navbar">-->
+                    <!--<div class="navbar-inner">-->
+                        <!--<div class="title">{{register.label}}</div>-->
+                        <!--<div class="right">-->
+                            <!--<a class="link popup-close"><i class="f7-icons">close_round</i></a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <div class="page-content login-screen-content" align="center">
+                    <p>&nbsp;</p>
+                    <img src="images/gasola-logo-alpha.png">
+                    <br/>
+                    <a href="#" data-login-screen=".login-screen" style="width: 150px;"
+                       class="login-screen-open col  button button-big button-raised button-fill">{{login.label}}</a>
+                    <br/>
+                    <a href="#" data-popup=".popup-register" style="width: 150px;"
+                       class="popup-open button button-big col button-raised button-fill color-green">{{register.label}}</a>
+                </div>
+            </div>
+        </div>
+    </div> <!-- NOT LOGGED LOGIN/REGISTER -->
+
+
+
+
+    <!-- LOGIN -->
+    <div class="login-screen">
+        <!-- Default view-page layout -->
+        <div class="view">
+            <div class="page">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="title">{{login.label}}</div>
+                        <div class="right">
+                            <!-- Link to close login screen -->
+                            <a class="link login-screen-close"><i class="f7-icons">close_round</i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- page-content has additional login-screen content -->
+                <div class="page-content login-screen-content">
+                    <!--<div class="login-screen-title">Login</div>-->
+                    <!-- Login form -->
+                    <form>
+                        <div class="list">
+                            <ul>
+                                <li class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title item-label">{{login.email}}</div>
+                                        <div class="item-input-wrap">
+                                            <input type="text" id="email" name="email" placeholder="{{login.email}}">
+                                            <span class="input-clear-button"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title item-label">{{login.password}}</div>
+                                        <div class="item-input-wrap">
+                                            <input type="password" id="password" name="password" placeholder="{{login.password}}">
+                                            <span class="input-clear-button"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="list">
+
+                            <div class="block-title">
+                                <a href="#" data-popup=".popup-forgot" class="popup-open">{{forgot.label}}</a>
+                                <p  style="margin-top: 10px;"/>
+                            </div>
+
+                            <ul>
+                                <li>
+                                    <a href="#" id="btn-signin" class="item-link list-button">{{button.signin}}</a>
+                                </li>
+                            </ul>
+                            <!--<div class="block-footer">Some text with login information.</div>-->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END LOGIN -->
+
+    <!-- REGISTER -->
+    <div class="popup popup-tablet-fullscreen popup-register">
+        <div class="view">
+            <div class="page">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="title">{{register.label}}</div>
+                        <div class="right">
+                            <!--<a class="link popup-close"><i class="f7-icons">close_round</i></a>-->
+                            <a class="link" id="btn-popup-register-close"><i class="f7-icons">close_round</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-content login-screen-content">
+                    <!--<div class="login-screen-title">Register</div>-->
+                    <!-- Register form -->
+                    <form>
+                        <div class="list">
+                            <ul>
+                                <li class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title item-label">{{register.name}}</div>
+                                        <div class="item-input-wrap">
+                                            <input type="text" id="register-name" name="register-name" placeholder="{{register.name}}">
+                                            <span class="input-clear-button"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title item-label">{{register.email}}</div>
+                                        <div class="item-input-wrap">
+                                            <input type="text" id="register-email" name="register-email" placeholder="{{register.email}}">
+                                            <span class="input-clear-button"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title item-label">{{register.password}}</div>
+                                        <div class="item-input-wrap">
+                                            <input type="password" id="register-password" name="register-password" placeholder="{{register.password}}">
+                                            <span class="input-clear-button"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="block-title">
+                                <a href="#" data-popup=".popup-privacy" class="popup-open">{{message.privacy}}</a>
+                                <p  style="margin-top: 10px;"/>
+                                <label class="item-checkbox "  >
+                                    <!-- Checkbox input -->
+                                    <input type="checkbox" id="cbx-privacy" />
+                                    <!-- Checkbox icon -->
+                                    <i class="icon icon-checkbox  display-inline-block"></i>  <span class="item-title">{{message.agree}}</span>
+                                    <!--<div class="item">-->
+                                        <!-- Checkbox Title -->
+                                    <!--</div>-->
+                                </label>
+                            </div>
+                        </div>
+                        <div class="list">
+
+                            <ul>
+                                <li>
+                                    <a href="#" id="btn-register" class="item-link list-button">{{button.register}}</a>
+                                </li>
+                            </ul>
+                            <!--<div class="block-footer">Some text with register information.</div>-->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div> <!-- END REGISTER -->
+
+
+    <!-- REPORT -->
+    <div class="popup popup-tablet-fullscreen popup-report">
+        <div class="view">
+            <div class="page">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="title">{{report.label}}</div>
+                        <div class="right">
+                            <!--<a class="link popup-close"><i class="f7-icons">close_round</i></a>-->
+                            <a class="link" id="btn-popup-report-close"><i class="f7-icons">close_round</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-content login-screen-content">
+                    <!--<div class="login-screen-title">Register</div>-->
+                    <!-- Register form -->
+                    <form id="frm-report">
+
+                        <div class="list">
+                            <div class="item-title" style="padding-left: 15px; margin-top: -10px;"  ><h2 class="title-2" style="margin-bottom: -10px;">{{message.price.reliability}}</h2><h3 class="title-3">{{report.question}}</h3></div>
+                            <ul>
+                                <li class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title"><strong>{{fuel.g.label}}:</strong> R$ <span id="lb-report-price-g"></span></div>
+                                        <div class="item-input-wrap">
+                                            <span class="item-label">Pouco</span>
+                                            <label class="radio"><input type="radio" id="report-price-g1" name="report_price_g" value="1"><i class="icon-radio"></i></label>
+                                            <label class="radio"><input type="radio" id="report-price-g2" name="report_price_g" value="2"><i class="icon-radio"></i></label>
+                                            <label class="radio"><input type="radio" id="report-price-g3" name="report_price_g" value="3"><i class="icon-radio"></i></label>
+                                            <label class="radio"><input type="radio" id="report-price-g4" name="report_price_g" value="4"><i class="icon-radio"></i></label>
+                                            <label class="radio"><input type="radio" id="report-price-g5" name="report_price_g" value="5"><i class="icon-radio"></i></label>
+                                            <span class="item-label">Muito</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title"><strong>{{fuel.e.label}}:</strong> R$ <span id="lb-report-price-e"></span></div>
+                                        <div class="item-input-wrap">
+                                            <span class="item-label">Pouco</span>
+                                            <label class="radio"><input type="radio" id="report-price-e1" name="report_price_e" value="1"><i class="icon-radio"></i></label>
+                                            <label class="radio"><input type="radio" id="report-price-e2" name="report_price_e" value="2"><i class="icon-radio"></i></label>
+                                            <label class="radio"><input type="radio" id="report-price-e3" name="report_price_e" value="3"><i class="icon-radio"></i></label>
+                                            <label class="radio"><input type="radio" id="report-price-e4" name="report_price_e" value="4"><i class="icon-radio"></i></label>
+                                            <label class="radio"><input type="radio" id="report-price-e5" name="report_price_e" value="5"><i class="icon-radio"></i></label>
+                                            <span class="item-label">Muito</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title"><strong>{{fuel.d.label}}:</strong> R$ <span id="lb-report-price-d"></span></div>
+                                        <div class="item-input-wrap">
+                                            <span class="item-label">Pouco</span>
+                                            <label class="radio"><input type="radio" id="report-price-d1" name="report_price_d" value="1"><i class="icon-radio"></i></label>
+                                            <label class="radio"><input type="radio" id="report-price-d2" name="report_price_d" value="2"><i class="icon-radio"></i></label>
+                                            <label class="radio"><input type="radio" id="report-price-d3" name="report_price_d" value="3"><i class="icon-radio"></i></label>
+                                            <label class="radio"><input type="radio" id="report-price-d4" name="report_price_d" value="4"><i class="icon-radio"></i></label>
+                                            <label class="radio"><input type="radio" id="report-price-d5" name="report_price_d" value="5"><i class="icon-radio"></i></label>
+                                            <span class="item-label">Muito</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="list">
+                            <ul>
+                                <li>
+                                    <a href="#" id="btn-report" class="item-link list-button">{{button.send}}</a>
+                                </li>
+                            </ul>
+                            <!--<div class="block-footer">Some text with register information.</div>-->
+                        </div>
+                        <input type="hidden" id="report-gasstation-id" name="report_gasstation_id" >
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div> <!-- END REPORT -->
+
+
+    <!-- FORGOT PWD -->
+    <div class="popup popup-tablet-fullscreen popup-forgot">
+        <div class="view">
+            <div class="page">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="title">{{forgot.label}}</div>
+                        <div class="right">
+                            <!--<a class="link popup-close"><i class="f7-icons">close_round</i></a>-->
+                            <a class="link" id="btn-popup-forgot-close"><i class="f7-icons">close_round</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-content login-screen-content">
+                    <!--<div class="login-screen-title">Register</div>-->
+                    <!-- Register form -->
+                    <form>
+                        <div class="list">
+                            <ul>
+                                <li class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title item-label">{{forgot.email}}</div>
+                                        <div class="item-input-wrap">
+                                            <input type="text" id="forgot-email" name="forgot_email" placeholder="">
+                                            <span class="input-clear-button"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="list">
+                            <ul>
+                                <li>
+                                    <a href="#" id="btn-forgot" class="item-link list-button">{{button.send}}</a>
+                                </li>
+                            </ul>
+                            <!--<div class="block-footer">Some text with register information.</div>-->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div> <!-- END FORGOT PWD -->
+
+
+    <!-- CONTACT -->
+    <div class="popup popup-tablet-fullscreen popup-contact">
+        <div class="view view-contact">
+            <div class="page">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="title">{{contact.label}}</div>
+                        <div class="right">
+                            <!--<a class="link popup-close"><i class="f7-icons">close_round</i></a>-->
+                            <a class="link" id="btn-popup-contact-close"><i class="f7-icons">close_round</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-content login-screen-content">
+                    <!--<div class="login-screen-title">Register</div>-->
+                    <!-- Register form -->
+                    <form id="frm-contact">
+                        <div class="list">
+
+
+                                <a class="item-link smart-select smart-select-init">
+                                    <select id="contact-subject" name="contact_subject">
+                                        <option value="1" selected>{{contact.label}}</option>
+                                        <option value="2">{{contact.compliment}}</option>
+                                        <option value="3">{{contact.suggestion}}</option>
+                                        <option value="4">{{contact.complaint}}</option>
+                                        <option value="5">{{contact.doubt}}</option>
+                                        <option value="6">{{contact.support}}</option>
+                                    </select>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title">Assunto:</div>
+                                        </div>
+                                    </div>
+                                </a>
+
+
+                            <ul>
+                                <li class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title">{{contact.message}}</div>
+                                        <div class="item-input-wrap">
+                                            <textarea id="contact-message" name="contact_message"></textarea>
+                                            <span class="input-clear-button"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="list">
+                            <ul>
+                                <li>
+                                    <a href="#" id="btn-contact" class="item-link list-button">{{button.send}}</a>
+                                </li>
+                            </ul>
+                            <!--<div class="block-footer">Some text with register information.</div>-->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div> <!-- END CONTACT -->
+
+    <!-- UPDATE PWD -->
+    <div class="popup popup-tablet-fullscreen popup-updatepwd">
+        <div class="view">
+            <div class="page">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="title">{{updatepwd.label}}</div>
+                        <div class="right">
+                            <!--<a class="link popup-close"><i class="f7-icons">close_round</i></a>-->
+                            <a class="link" id="btn-popup-updatepwd-close"><i class="f7-icons">close_round</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-content login-screen-content">
+                    <!--<div class="login-screen-title">Register</div>-->
+                    <!-- Register form -->
+                    <form>
+                        <div class="list">
+                            <ul>
+                                <li class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title item-label">{{updatepwd.pwd.old}}</div>
+                                        <div class="item-input-wrap">
+                                            <input type="password" id="updatepwd-old" name="updatepwd_old" placeholder="{{updatepwd.pwd.old}}">
+                                            <span class="input-clear-button"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title item-label">{{updatepwd.pwd.new}}</div>
+                                        <div class="item-input-wrap">
+                                            <input type="password" id="updatepwd-new" name="updatepwd_new" placeholder="{{updatepwd.pwd.new}}">
+                                            <span class="input-clear-button"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title item-label">{{updatepwd.pwd.again}}</div>
+                                        <div class="item-input-wrap">
+                                            <input type="password" id="updatepwd-again" name="updatepwd_again" placeholder="{{updatepwd.pwd.again}}">
+                                            <span class="input-clear-button"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="list">
+                            <ul>
+                                <li>
+                                    <a href="#" id="btn-updatepwd" class="item-link list-button">{{button.send}}</a>
+                                </li>
+                            </ul>
+                            <!--<div class="block-footer">Some text with register information.</div>-->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div> <!-- UPDATE PWD -->
+
+
+    <!-- PRICE UPDATE -->
+    <div id="popup-small">
+
+    <div class="popup popup-price-update">
+        <div class="view">
+            <div class="page">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="title">{{label.price.update}}</div>
+                        <div class="right">
+                            <a class="link popup-close"><i class="f7-icons">close_round</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-content login-screen-content">
+                    <!--<div class="login-screen-title">Register</div>-->
+                    <!-- Register form -->
+                    <div class="item-content" style="padding: 0px 15px;">
+                        <p class="segmented segmented-round">
+                         <div id="gs_info_box"></div>
+                        </p>
+                    </div>
+                    <form id="frm-price-update">
+                        <div class="list">
+
+                            <ul>
+                                <li class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title item-label">{{fuel.g.label}} <span id="lb-fuel-price-g"></span></div>
+                                        <div class="item-input-wrap">
+                                            <input type="text" id="price-g" name="price_g" class="money" placeholder="">
+                                            <span class="input-clear-button"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title item-label">{{fuel.e.label}} <span id="lb-fuel-price-e"></span></div>
+                                        <div class="item-input-wrap">
+                                            <input type="text" id="price-e" name="prince_e" class="money"  placeholder="">
+                                            <span class="input-clear-button"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title item-label">{{fuel.d.label}} <span id="lb-fuel-price-d"></span></div>
+                                        <div class="item-input-wrap">
+                                            <input type="text" id="price-d" name="price_d" class="money" placeholder="">
+                                            <span class="input-clear-button"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="list">
+                            <ul>
+                                <li>
+                                    <a href="#" id="btn-price-update" class="item-link list-button">{{button.send}}</a>
+                                </li>
+                            </ul>
+                            <!--<div class="block-footer">Some text with register information.</div>-->
+                        </div>
+                        <input type="hidden" id="gasstation-id" name="gasstation_id" >
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div> <!-- END PRICE UPDATE -->
+    </div>
+
+</div> <!-- END APP -->
+
+<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.serializeToJSON.min.js"></script>
+<script type="text/javascript" src="js/jquery.mask.min.js"></script>
+<script type="text/javascript" src="js/framework7.min.js"></script>
+<script src="js/maps.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-16040432-13"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-16040432-13');
+</script>
+
+<!-- Hotjar Tracking Code for www.gasola.com.br -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:864314,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+</body>
+</html>

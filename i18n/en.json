@@ -1,0 +1,132 @@
+{
+  "app": {
+    "name": "Gasola",
+    "version": "v1.0.1"
+  },
+  "config": {
+    "configuration": "Configuration",
+    "lang.label": "Language",
+    "lang.en": "English",
+    "lang.pt-BR": "Portuguese",
+    "show.map": "Map",
+    "show.list": "List",
+    "show": "Show"
+  },
+  "fuel": {
+    "label": "Fuel",
+    "g.label": "Gas",
+    "e.label": "Ethanol ",
+    "d.label": "Diesel",
+    "g": "G",
+    "e": "E",
+    "d": "D"
+  },
+  "list": {
+    "title": "Gas station list"
+  },
+  "login": {
+    "label": "Login",
+    "username": "Username",
+    "password": "Password",
+    "email": "Email",
+    "failure": "Failed to log in. Please try again!",
+    "failure.unregistered": "User not registered. Try again!",
+    "failure.unactivated": "You have not activated your account yet. Access your e-mail!",
+    "failure.password": "Invalid password. Try again!"
+  },
+  "register": {
+    "label": "Register",
+    "name": "Name",
+    "username": "username",
+    "password": "Password",
+    "email": "E-mail",
+    "failure": "Failed to register. Please try again!",
+    "success": "Registration successful! Check your email and click on the activation link."
+  },
+  "forgot": {
+    "label": "Forgot my password",
+    "email": "Recovery email",
+    "fill.email": "Please fill in the email",
+    "failure": "Failed to send email. Please try again!",
+    "success": "A new password has been sent to your email. Please, check it!"
+  },
+  "report": {
+    "label": "Report",
+    "question": "How accurate is this price?",
+    "failure": "Failed to submit your rating. Try again!",
+    "success": "Thank you for your contribution!",
+    "ask.update.price": "Would you like to inform the correct price?"
+  },
+  "updatepwd": {
+    "label": "Update password",
+    "password": "Password",
+    "pwd.old": "Old password",
+    "pwd.new": "New password",
+    "pwd.again": "Repeat password",
+    "fill.requered": "Please fill in all fields.",
+    "not.match": "Passwords do not match.",
+    "failure": "Failed to update password. Please try again!",
+    "success": "Password updated successfully!"
+  },
+  "contact": {
+    "label": "Contact",
+    "compliment": "Compliment",
+    "suggestion": "Suggestion",
+    "complaint": "Complaint",
+    "doubt": "Doubt",
+    "support": "Support",
+    "message": "Message",
+    "failure": "Failed to send the message. Try again!",
+    "success": "Thank you! We'll make contact soon."
+  },
+  "button": {
+    "save": "Save",
+    "apply": "Apply",
+    "ok": "Ok",
+    "send": "Send",
+    "find": "Find",
+    "close": "Close",
+    "signin": "Sign In",
+    "logout": "Logout",
+    "register": "Register",
+    "cancel": "Cancel",
+    "trace.route": "Trace Route",
+    "report": "Report"
+  },
+  "message": {
+    "confirm": "Confirm action?",
+    "reload": "To perform this operation it is necessary to restart the App.",
+    "notice": "Notice",
+    "success": "Operation performed successfully!",
+    "you": "You",
+    "you.are.here": "You are here :)",
+    "you.keep.center": "Keep me centralized on the map",
+    "price.update": "Price update",
+    "price.update.success": "Price updated successfully.",
+    "price.update.failured": "Failed to try to update price.",
+    "price.reliability": "Price reliability",
+    "thankyou": "Thank you!",
+    "agree": "I agree",
+    "privacy": "Privacy Policy",
+    "privacy.failure": "You must accept the terms of the Privacy Policy.",
+    "login.required": "You need to be logged in to see fuel stations and prices.",
+    "nothing.found": "Nothing found.",
+    "gethere": "You will be here in %s,<br />travelling %s."
+  },
+  "label": {
+    "price.update": "Price update",
+    "time": "Time",
+    "distance": "Distance",
+    "minutes": "minute(s)",
+    "km": "Km",
+    "miles": "miles",
+    "reliability": "Reliability",
+    "not.rated": "Não avaliado",
+    "reliability.yes": "Reliable",
+    "reliability.no": "Unreliable",
+    "reliability.maybe": "Maybe reliable",
+    "not.rated": "Not rated yet",
+    "yes": "Yes",
+    "no": "No"
+  }
+}

@@ -1,0 +1,130 @@
+#map {
+    height: calc(100vh - 60px);
+    width: 100vw;
+}
+
+/*.md .navbar ~ * .page-content, .md .navbar ~ .page-content {*/
+    /*-overflow: hidden;*/
+/*}*/
+
+#view-show-map.page-content {
+    overflow: hidden;
+}
+
+.md .block {
+    margin: -10px 0;
+    padding: 0;
+}
+
+.size-18 { font-size: 18px }
+.size-20 { font-size: 20px }
+.size-22 { font-size: 22px }
+.size-25 { font-size: 25px }
+.size-29 { font-size: 29px }
+.size-50 { font-size: 50px }
+
+.color-gasola,
+.color-theme-gasola,
+.theme-gasola {
+    background: #36BB3B !important;
+}
+
+
+#gig {
+    position: absolute;
+    z-index: 9999;
+    background: #36BB3B url(../images/preview.gif) no-repeat center 0px;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+}
+
+#gig img {
+    margin-top: 75px;
+}
+
+.panel .list  {
+    background: white;
+    z-index: 999999999999 !important;
+}
+
+/** Search Maps **/
+.pac-container, #map-search, #pac-input { z-index: 100000 !important; }
+#pac-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 11px;
+    margin-left: 0px;
+    margin-top: 10px;
+    padding: 10px 12px;
+    text-overflow: ellipsis;
+    width: 150px;
+    border: 1px solid #ddd;
+    display: none;
+}
+
+#app .navbar-inner {
+    padding: 0 15px;
+}
+.color-blue-dark {
+    background: royalblue !important;
+}
+
+#app .panel-open {
+    width: 50px;
+    text-align:right;
+}
+
+
+.item-title {
+    font-size: 0.85em;
+}
+.accordion-item-content p {
+    font-size: 0.85em;
+    padding: 10px 15px;
+    background: #f2f2f2;
+}
+
+.no-hairlines li {
+    border-bottom: 1px solid #ebebeb;
+}
+
+.login-msg {
+    background: #f2f2f2;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn-marker-popup {
+    margin-bottom: 5px;
+}
+
+.float-left {
+    float: left ;
+    display: inline;
+
+}
+
+.price-reliability {
+    font-size: 0.85em;
+    color: #666;
+}
+
+h2.title-2 {
+    font-variant-caps: small-caps !important;
+}
+
+h3.title-3 {
+    color: teal;
+}
+
+/*.popup {*/
+    /*left:25%;*/
+    /*height:50%; top: 50%;*/
+    /*width: 220px; height: 320px !important;*/
+ /*}*/
+

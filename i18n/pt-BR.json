@@ -1,0 +1,132 @@
+{
+  "app": {
+    "name": "Gasola",
+    "version": "v1.0.3"
+  },
+  "config": {
+    "configuration": "Configuração",
+    "lang.label": "Idioma",
+    "lang.en": "Inglês",
+    "lang.pt-BR": "Português",
+    "show.map": "Mapa",
+    "show.list": "Lista",
+    "show": "Exibição"
+  },
+  "fuel": {
+    "label": "Combustível",
+    "g.label": "Gasolina",
+    "e.label": "Álcool",
+    "d.label": "Diesel",
+    "g": "G",
+    "e": "E",
+    "d": "D"
+  },
+  "list": {
+    "title": "Lista de postos"
+  },
+  "login": {
+    "label": "Login",
+    "username": "Usuário",
+    "password": "Senha",
+    "email": "E-mail",
+    "failure": "Falhou ao logar. Tente novamente!",
+    "failure.unregistered": "Usuário não cadastrado. Tente novamente!",
+    "failure.unactivated": "Você ainda não ativou sua conta. Acesse seu e-mail!",
+    "failure.password": "Senha inválida. Tente novamente!"
+  },
+  "register": {
+    "label": "Registro",
+    "name": "Nome",
+    "username": "Usuário",
+    "password": "Senha",
+    "email": "E-mail",
+    "failure": "Falhou ao registrar ou este e-mail já foi registrado. Tente novamente!",
+    "success": "Registro realizado com sucesso! Verifique seu e-mail e clique no link de ativação."
+  },
+  "forgot": {
+    "label": "Esqueci minha senha",
+    "email": "E-mail de recuperação",
+    "fill.email": "Favor preencher seu e-mail",
+    "failure": "Falhou ao enviar o e-mail. Tente novamente!",
+    "success": "Uma nova senha foi enviada para seu e-mail. Por favor, verifique!"
+  },
+  "report": {
+    "label": "Reportar",
+    "question": "O quanto este preço está correto?",
+    "failure": "Falhou ao enviar sua avaliação. Tente novamente!",
+    "success": "Agradecemos sua colaboração!",
+    "ask.update.price": "Gostaria de informar o preço correto?"
+  },
+  "updatepwd": {
+    "label": "Atualizar senha",
+    "password": "Senha",
+    "pwd.old": "Senha atual",
+    "pwd.new": "Nova senha",
+    "pwd.again": "Repita a senha",
+    "fill.requered": "Favor preencher todos os campos.",
+    "not.match": "As senhas devem ser iguais. Verifique!",
+    "failure": "Falhou ao atualzar a senha. Tente novamente!",
+    "success": "Senha atualizada com sucesso!"
+  },
+  "contact": {
+    "label": "Contato",
+    "compliment": "Elogio",
+    "suggestion": "Sugestão",
+    "complaint": "Reclamação",
+    "doubt": "Dúvida",
+    "support": "Suporte",
+    "message": "Mensagem",
+    "failure": "Falhou ao enviar a mensagem. Tente novamente!",
+    "success": "Obrigado! Logo faremos contato."
+  },
+  "button": {
+    "save": "Salvar",
+    "apply": "Aplicar",
+    "ok": "Ok",
+    "send": "Enviar",
+    "find": "Buscar",
+    "close": "Fechar",
+    "signin": "Entrar",
+    "logout": "Sair",
+    "register": "Registrar",
+    "cancel": "Cancelar",
+    "trace.route": "Traçar Rota",
+    "report": "Reportar"
+  },
+  "message": {
+    "confirm": "Confirmar operação?",
+    "reload": "Para efetivar esta operação é necessário reiniciar o App.",
+    "notice": "Aviso.",
+    "success": "Operação realizada com sucesso!",
+    "you": "Você",
+    "you.are.here": "Você está aqui :)",
+    "you.keep.center": "Manter-me centralizado no mapa",
+    "price.update": "Atualizar preço",
+    "price.update.success": "Preço atualizado com sucesso.",
+    "price.update.failured": "Falhou ao tentar atualizar o preço.",
+    "price.reliability": "Confiabilidade do Preço",
+    "thankyou": "Obrigado!",
+    "agree": "Estou de acordo",
+    "privacy": "Política de Privacidade",
+    "privacy.failure": "Você precisa aceitar os termos da Política de Privacidade.",
+    "login.required": "Você precisa estar logado para ver os postos e os preços dos combustíveis.",
+    "nothing.found": "Nenhum resultado encontrado.",
+    "gethere": "Você chegará aqui em %s<br />e percorrerá %s."
+
+  },
+  "label": {
+    "price.update": "Atualizar preço",
+    "time": "Tempo",
+    "distance": "Distância",
+    "minutes": "minuto(s)",
+    "km": "Km",
+    "miles": "milhas",
+    "reliability": "Confiabilidade",
+    "not.rated": "Não avaliado",
+    "reliability.yes": "Confiável",
+    "reliability.no": "Não confiável",
+    "reliability.maybe": "Pouco confiável",
+    "yes": "Sim",
+    "no": "Não"
+  }
+}
