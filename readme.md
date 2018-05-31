@@ -2,7 +2,7 @@
 
 ## Sobre
 
-Gasola é um projeto da disciplina [Construção de Software (CS)](https://medium.com/construcao-de-software) do PPCA/UnB 1.2018. Trata-se de um MVP (experimento) para viabilizar o estudo de diversos conceitos ligados a uma startup. Na verdade aqui o software é o que menos importa :)
+Gasola é um projeto da disciplina [Construção de Software (CS)](https://medium.com/construcao-de-software) do PPCA/UnB 1.2018. Trata-se de um MVP (experimento) para viabilizar o estudo de diversos conceitos ligados a uma startup. Na verdade o software aqui é apenas um meio e não o fim :)
 
 O problema a ser resolvido diz respeito a como encontrar postos de combustíveis com os menores preços. O Gasola permite que o usuário consulte o preço, em tempo real, diretamente no mapa ou em uma lista ordenada, podendo, ainda, traçar rotas até o posto e/ou informar os preços atualizados quando for abastecer, ajudando toda comunidade a economizar.
 
