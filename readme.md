@@ -6,7 +6,7 @@ Gasola é um projeto da disciplina [Construção de Software (CS)](https://mediu
 
 O problema a ser resolvido diz respeito a como encontrar postos de combustíveis com os menores preços. O Gasola permite que o usuário consulte o preço, em tempo real, diretamente no mapa ou em uma lista ordenada, podendo, ainda, traçar rotas até o posto e/ou informar os preços atualizados quando for abastecer, ajudando toda comunidade a economizar.
 
-No momento o Gasola está disponível apenas para o Plano Piloto/DF e no formato Web, e pode ser acessado pelo endereço de Internet: [https://gasola.com.br/](https://gasola.com.br/).
+No momento o Gasola está disponível apenas para o Plano Piloto/DF e no formato Web, podendo ser acessado pelo endereço de Internet: [https://gasola.com.br/](https://gasola.com.br/).
 
 <p align="center"><img src="https://github.com/unb-ppca-csw/gasola/blob/master/images/gasola.gif"></p>
 
